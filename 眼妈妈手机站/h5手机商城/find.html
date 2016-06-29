@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest=""><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Expires" content="-1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swipe.js"></script>
+    <script>
+        $(function(){
+            $("#xqTab li").on("click",function(){
+                $(this).addClass("on").siblings(".on").removeClass("on");
+                $(".find-cont > .con").hide();
+                $(".find-cont > .con"+$(this).index()).show();
+                if($(this).index()==1){
+                    initSwipe();
+                }
+                return false;
+            });
+            function initSwipe(){
+                var elem = document.getElementById('mySwipe');
+                window.mySwipe = Swipe(elem, {
+                    startSlide: 0,
+                    auto: 3000,
+                    continuous: true,
+                    disableScroll: true,
+                    stopPropagation: true,
+                    callback: function(index, element) {
+                        $(".slider .page span").eq(index).addClass("on").siblings(".on").removeClass("on");
+                    },
+                    transitionEnd: function(index, element) {}
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <header class="header user-header orig-bg">
+        <h3>发现</h3>
+        <div class="right-buttons">
+            <a class="icons01 btn search-btn" href="#"></a>
+            <a class="icons01 btn menu-btn" href="#"></a>
+        </div>
+    </header>
+    <section class="pt44 pb50 content">
+        <div class="xq-detail-tab">
+            <ul id="xqTab">
+                <li class="on"><a href="#">关注</a></li>
+                <li><a href="#">需求</a></li>
+                <li><a href="#">项目</a></li>
+                <li><a href="#">作品</a></li>
+            </ul>
+        </div>
+        <div class="find-cont">
+            <div class="con con0">
+                <div class="user-cont">
+                    <div class="item">
+                        <div class="u-info">
+                            <img src="images/photo02.jpg" width="39" height="39"/>
+                            <h5>崔崔</h5>
+                        </div>
+                        <div class="con">
+                            <div class="photo">
+                                <img src="images/pic01.jpg"/>
+                            </div>
+                            <div class="text">
+                                <div class="des">这里是作品描述...！</div>
+                                <div class="address"><i class="icons01"></i>杭州</div>
+                                <div class="labels"><i class="icons01"></i><span class="on">手绘</span><span>插图</span><span>色彩</span><span>PS</span></div>
+                            </div>
+                        </div>
+                        <div class="common comments">
+                            <div class="num"><i class="icons01 icon icon04"></i>86</div>
+                            <div class="num"><i class="icons01 icon icon03"></i>236</div>
+                            <div class="num"><i class="icons01 icon icon05"></i>86</div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="comments-list">
+                    <li>
+                        <div class="item">
+                            <div class="photo"><img src="images/photo02.jpg"/></div>
+                            <div class="text">
+                                <h4>花花火火苗苗</h4>
+                                <div class="date">2015-06-15</div>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <div class="photo2"><img src="images/photo02.jpg"/></div>
+                            <div class="text2">
+                                <h4>H5动画页面设计</h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="common2 rctj">
+                    <div class="title">
+                        <h3>人才推荐</h3>
+                        <a class="more" href="#">全部</a>
+                    </div>
+                    <div class="cont">
+                        <div class="user-cont">
+                            <div class="item">
+                                <div class="u-info">
+                                    <img src="images/photo02.jpg" width="39" height="39"/>
+                                    <h5>崔崔</h5>
+                                    <div class="worker">UI设计师</div>
+                                    <a class="btn2 gz-btn" href="#">关注</a>
+                                </div>
+                                <div class="con">
+                                    <div class="photos">
+                                        <ul class="clearfix">
+                                            <li><img src="images/photo.jpg"/></li>
+                                            <li><img src="images/photo.jpg"/></li>
+                                            <li><img src="images/photo.jpg"/></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="u-info">
+                                    <img src="images/photo02.jpg" width="39" height="39"/>
+                                    <h5>崔崔</h5>
+                                    <div class="worker">UI设计师</div>
+                                    <a class="btn2 gz-btn" href="#">关注</a>
+                                </div>
+                                <div class="con">
+                                    <div class="photos">
+                                        <ul class="clearfix">
+                                            <li><img src="images/photo.jpg"/></li>
+                                            <li><img src="images/photo.jpg"/></li>
+                                            <li><img src="images/photo.jpg"/></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con con1" style="display: none;">
+                <div class="find-project find-xq">
+                    <div class="slider">
+                        <div id='mySwipe' class='swipe'>
+                            <div class='swipe-wrap'>
+                                <div><b><img src="images/slider-pic01.jpg"></b></div>
+                                <div><b><img src="images/slider-pic01.jpg"></b></div>
+                                <div><b><img src="images/slider-pic01.jpg"></b></div>
+                            </div>
+                        </div>
+                        <div class="page">
+                            <span class="on"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="common2 hot">
+                        <div class="title">
+                            <h3>热门推荐</h3>
+                        </div>
+                        <div class="cont">
+                            <div class="search-talents">
+                                <ul>
+                                    <li><a href="#">
+                                        <div class="photo"><img src="images/photo02.jpg"/></div>
+                                        <div class="text">
+                                            <h4>项目名称</h4>
+                                            <div class="des">￥365987</div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <div class="photo"><img src="images/photo02.jpg"/></div>
+                                        <div class="text">
+                                            <h4>项目名称</h4>
+                                            <div class="des">￥365987</div>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <div class="photo"><img src="images/photo02.jpg"/></div>
+                                        <div class="text">
+                                            <h4>项目名称</h4>
+                                            <div class="des">￥365987</div>
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                            <div class="find-tips">
+                                <ul class="clearfix">
+                                    <li><div class="panel"><img src="images/type-pic01.jpg"/><a href="#">平面设计</a></div></li>
+                                    <li><div class="panel"><img src="images/type-pic02.jpg"/><a href="#">应用设计</a></div></li>
+                                    <li><div class="panel"><img src="images/type-pic03.jpg"/><a href="#">多媒体设计</a></div></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="common2 hot">
+                        <div class="title">
+                            <h3>最新需求</h3>
+                        </div>
+                        <div class="user-cont">
+                            <div class="item">
+                                <div class="xq-top-info">
+                                    <h3>H5动画页面设计</h3>
+                                    <div class="text">
+                                        <div class="left">
+                                            <div class="price"><span class="on">悬赏</span><span>￥2000</span></div>
+                                            <div class="date">悬赏类型　　51人参与　　剩余<span class="blue">11天20小时15分钟</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="button"><a href="#">承接任务</a></div>
+                                </div>
+                                <div class="common comments">
+                                    <div class="num"><i class="icons01 icon icon04"></i>86</div>
+                                    <div class="num"><i class="icons01 icon icon03"></i>236</div>
+                                    <div class="num"><i class="icons01 icon icon05"></i>86</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con con2" style="display: none;">
+                <div class="find-project">
+                    <div class="find-tips">
+                        <ul class="clearfix">
+                            <li><div class="panel"><img src="images/tip-img01.jpg"/><a href="#">摄影</a></div></li>
+                            <li><div class="panel"><img src="images/tip-img02.jpg"/><a href="#">手绘</a></div></li>
+                            <li><div class="panel"><img src="images/tip-img03.jpg"/><a href="#">图标</a></div></li>
+                            <li><div class="panel"><img src="images/tip-img04.jpg"/><a href="#">小说</a></div></li>
+                        </ul>
+                    </div>
+                    <div class="common2 member">
+                        <div class="title">
+                            <h3>成员招募</h3>
+                            <a class="more" href="#">全部</a>
+                        </div>
+                        <div class="cont">
+                            <ul>
+                                <li><a href="#">招募语招募语招募语招募语招募语...</a></li>
+                                <li><a href="#">招募语招募语招募语招募语招募语...</a></li>
+                                <li><a href="#">招募语招募语招募语招募语招募语...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="common2 new-project">
+                        <div class="title">
+                            <h3>最新项目</h3>
+                        </div>
+                        <div class="cont">
+                            <div class="user-cont">
+                                <div class="item">
+                                    <div class="u-info">
+                                        <h5 class="project-name">游戏场景设计</h5>
+                                        <a class="btn2 gz-btn" href="#">关注</a>
+                                    </div>
+                                    <div class="con">
+                                        <div class="photo">
+                                            <img src="images/pic01.jpg"/>
+                                        </div>
+                                        <div class="u-info">
+                                            <img src="images/photo02.jpg" width="39" height="39"/>
+                                            <h5>崔崔</h5>
+                                            <div class="date">2015.06.02</div>
+                                        </div>
+                                        <div class="text">
+                                            <div class="des">创建了游戏场景设计</div>
+                                            <div class="address"><i class="icons01"></i>杭州</div>
+                                            <div class="labels"><i class="icons01"></i><span class="on">手绘</span><span>插图</span><span>色彩</span><span>PS</span></div>
+                                            <div class="dtl">这里是作品描述作品描述作品描述作品描述作品描述作品描述作品描述作品描述...！</div>
+                                        </div>
+                                    </div>
+                                    <div class="common comments">
+                                        <div class="num"><i class="icons01 icon icon04"></i>86</div>
+                                        <div class="num"><i class="icons01 icon icon03"></i>236</div>
+                                        <div class="num"><i class="icons01 icon icon05"></i>86</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con con3" style="display: none;">
+                <div class="find-ad">
+                    <ul>
+                        <li><img src="images/ad-pic.jpg"/></li>
+                    </ul>
+                    <span class="close"></span>
+                </div>
+                <div class="find-tips">
+                    <ul class="clearfix">
+                        <li><div class="panel"><img src="images/tip-img01.jpg"/><a href="#">摄影</a></div></li>
+                        <li><div class="panel"><img src="images/tip-img02.jpg"/><a href="#">手绘</a></div></li>
+                        <li><div class="panel"><img src="images/tip-img03.jpg"/><a href="#">图标</a></div></li>
+                        <li><div class="panel"><img src="images/tip-img04.jpg"/><a href="#">小说</a></div></li>
+                    </ul>
+                </div>
+                <div class="user-cont">
+                    <div class="item">
+                        <div class="u-info">
+                            <img src="images/photo02.jpg" width="39" height="39"/>
+                            <h5>崔崔</h5>
+                        </div>
+                        <div class="con">
+                            <div class="photo">
+                                <img src="images/pic01.jpg"/>
+                            </div>
+                            <div class="text">
+                                <div class="des">这里是作品描述...！</div>
+                                <div class="address"><i class="icons01"></i>杭州</div>
+                                <div class="labels"><i class="icons01"></i><span class="on">手绘</span><span>插图</span><span>色彩</span><span>PS</span></div>
+                            </div>
+                        </div>
+                        <div class="common comments">
+                            <div class="num"><i class="icons01 icon icon04"></i>86</div>
+                            <div class="num"><i class="icons01 icon icon03"></i>236</div>
+                            <div class="num"><i class="icons01 icon icon05"></i>86</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="u-info">
+                            <img src="images/photo02.jpg" width="39" height="39"/>
+                            <h5>崔崔</h5>
+                        </div>
+                        <div class="con">
+                            <div class="text">
+                                <div class="des">这里是作品描述...！</div>
+                                <div class="address"><i class="icons01"></i>杭州</div>
+                                <div class="labels"><i class="icons01"></i><span class="on">手绘</span><span>插图</span><span>色彩</span><span>PS</span></div>
+                            </div>
+                        </div>
+                        <div class="common comments">
+                            <div class="num"><i class="icons01 icon icon04"></i>86</div>
+                            <div class="num"><i class="icons01 icon icon03"></i>236</div>
+                            <div class="num"><i class="icons01 icon icon05"></i>86</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="f-nav-tab">
+        <ul>
+            <li><a class="icon icon01" href="#"></a></li>
+            <li class="on"><a class="icon icon02" href="#"></a></li>
+            <li><a class="icon icon03" href="#"></a></li>
+            <li><a class="icon icon04" href="#"></a></li>
+            <li><a class="icon icon05" href="#"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

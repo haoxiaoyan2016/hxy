@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest=""><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Expires" content="-1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <script src="js/zepto.min.js"></script>
+    <script>
+        $(function(){
+            $(".message-list li").swipeLeft(function(){
+                $(this).addClass("delete");
+            });
+            $(".message-list li").swipeRight(function(){
+                $(this).removeClass("delete");
+            });
+        })
+    </script>
+</head>
+<body>
+    <header class="header user-header orig-bg">
+        <div class="left-buttons"><a class="icons01 btn back-btn" href="01-home.html"></a></div>
+        <h3>新点赞</h3>
+    </header>
+    <section class="pt44 content labels-content">
+        <div class="search-talents message-list message-list2">
+            <ul>
+                <li><a>
+                    <div class="c">
+                        <div class="photo"><img src="images/photo02.jpg"/></div>
+                        <div class="text">
+                            <h4>崔崔<span class="gray">赞了你的评论</span></h4>
+                            <div class="des des2">15-08-15</div>
+                        </div>
+                        <div class="con">
+                            挺有趣的，我觉得不错呀！鹿的眼睛可能是想表现播放按钮的效果吧~~
+                        </div>
+                    </div>
+                    <div class="d">删除</div>
+                </a></li>
+                <li><a>
+                    <div class="c">
+                        <div class="photo"><img src="images/photo02.jpg"/></div>
+                        <div class="text">
+                            <h4>崔崔<span class="gray">赞了你的图片</span></h4>
+                            <div class="des des2">15-08-15</div>
+                            <div class="pic"><img src="images/photo02.jpg"/></div>
+                        </div>
+                    </div>
+                    <div class="d">删除</div>
+                </a></li>
+                <li><a>
+                    <div class="c">
+                        <div class="photo"><img src="images/photo02.jpg"/></div>
+                        <div class="text">
+                            <h4>崔崔<span class="gray">赞了你的评论</span></h4>
+                            <div class="des des2">15-08-15</div>
+                        </div>
+                        <div class="con">
+                            挺有趣的，我觉得不错呀！鹿的眼睛可能是想表现播放按钮的效果吧~~
+                        </div>
+                    </div>
+                    <div class="d">删除</div>
+                </a></li>
+                <li><a>
+                    <div class="c">
+                        <div class="photo"><img src="images/photo02.jpg"/></div>
+                        <div class="text">
+                            <h4>崔崔<span class="gray">赞了你的图片</span></h4>
+                            <div class="des des2">15-08-15</div>
+                            <div class="pic"><img src="images/photo02.jpg"/></div>
+                        </div>
+                    </div>
+                    <div class="d">删除</div>
+                </a></li>
+                <li><a>
+                    <div class="c">
+                        <div class="photo"><img src="images/photo02.jpg"/></div>
+                        <div class="text">
+                            <h4>崔崔<span class="gray">赞了你的评论</span></h4>
+                            <div class="des des2">15-08-15</div>
+                        </div>
+                        <div class="con">
+                            挺有趣的，我觉得不错呀！鹿的眼睛可能是想表现播放按钮的效果吧~~
+                        </div>
+                    </div>
+                    <div class="d">删除</div>
+                </a></li>
+                <li><a>
+                    <div class="c">
+                        <div class="photo"><img src="images/photo02.jpg"/></div>
+                        <div class="text">
+                            <h4>崔崔<span class="gray">赞了你的图片</span></h4>
+                            <div class="des des2">15-08-15</div>
+                            <div class="pic"><img src="images/photo02.jpg"/></div>
+                        </div>
+                    </div>
+                    <div class="d">删除</div>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

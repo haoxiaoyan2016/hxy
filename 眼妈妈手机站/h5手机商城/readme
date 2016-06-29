@@ -1,0 +1,85 @@
+1 人才个人
+    人才个人首页_作品       user.html
+    首页_发现_单个作品展示页   user-item.html
+2我的
+    个人首页_作品               my.html
+3首页
+    首页_承接的需求             home.html
+    首页_我的需求_首次          home-empty.html
+    首页_承接的需求_参与者      xq-detail.html
+    首页_承接的需求_留言         xq-detail.html
+    首页_承接的需求_留言_回复      xq-detail.html
+    首页_承接的需求_描述         xq-detail.html
+    首页_承接的需求_资料         xq-detail.html
+    首页_发布的需求            home02.html
+    首页_发布需求_首次            home02-empty.html
+    首页_搜索                  home02-search.html
+    首页_文件预览              preview.html
+    首页_账单                  bill.html
+4搜素
+    搜索标签                search3.html
+    搜索人才                search2.html
+    搜索项目                search.html
+
+5 发布_发布需求
+    发布_发布需求_查看案例     case.html
+    发布_发布需求_查看案例_案例详情页
+
+    发布_发布需求_选择任务所属类目_1      choose-type.html
+    发布_发布需求_选择任务种类            choose-task.html
+
+
+5发布_发布作品
+    发布作品                fbzp.html
+    添加标签                add-label.html
+    选择城市                choose-city.html
+    添加描述                add-description.html
+
+6 发现
+    首页_发现_关注          find.html
+    首页_发现_作品          find.html
+    首页_发现_需求          find.html
+    首页_发现_项目          find.html
+    首页_发现_作品标签详情页    label-detail.html
+    首页_详细页_纯文字    home-detail.html
+    首页_详细页_图文    home-detail.html
+
+
+====================第二阶段=========================
+登陆
+    首页.jpg                01-home.html
+    登陆2.jpg               01-login.html
+    手机注册.jpg            01-register.html
+    兴趣页.jpg              01-labels.html
+    推荐用户.jpg            01-recommend.html
+
+消息
+    消息.jpg                10-message.html
+    新消息.jpg              10-new-message.html
+    需求消息.jpg            10-xq-message.html
+    新粉丝.jpg              10-xfs.html
+    新点赞.jpg              10-xdz.html
+    系统消息.jpg            10-xtxx.html
+    系统通知.jpg            10-xttz.html
+    消息详情.jpg            10-xxxq.html
+    消息详情-未通过.jpg     10-xxxq2.html
+
+更多
+    帮助与反馈.jpg                       05-more01.html
+    更多_帮助和反馈_反馈.jpg             05-more02.html
+    更多_帮助和反馈_问题详情.jpg         05-more03.html
+    更多_帮助和反馈_摇一摇使用说明.jpg   05-more04.html
+
+发布_发布需求
+    发布_发布需求_需求描述_预算详情_所有下拉.jpg          02-fb.html
+
+
+====================第二阶段=========================
+个人首页_单个作品展示.jpg        20zp-item.html
+首页_承接的需求.psd              xq-detail.html
+个人首页_最近.jpg                20new.html
+个人首页_我_分享设计师主页       20user.html
+首页_发现_作品标签_参与的人      20find.html
+首页_发现_作品标签详情页    label-detail.html
+首页_发现_作品标签_内容页       20labels.html
+

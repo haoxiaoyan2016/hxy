@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="images/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="images/css/basic.css"/>
+<link rel="stylesheet" type="text/css" href="images/css/idangerous.swiper.css"/>
+<title>无标题文档</title>
+</head>
+<script type="text/javascript" src="images/js/jquery.min.js"></script>
+<script type="text/javascript" src="images/js/idangerous.swiper-2.1.min.js"></script>
+<body>
+
+<div class="top">
+	<img src="images/logo_top.gif" />
+    <h1>眼妈妈，全球功能眼镜的新领军者!</h1>
+    <div class="clear"></div>
+</div>
+<div class="nav">
+	<ul>
+		<li><a href="#" style="color:#fff;">眼妈妈首页</a></li>
+        <li><a href="#">高尔夫专用镜</a></li>
+        <li><a href="#">驾驶专用眼镜</a></li>
+        <li><a href="#">电脑专用眼镜</a></li>
+        <li><a href="#">智能老花镜</a></li>
+        <li><a href="#">AB学生镜</a></li>
+        <li><a href="#">隐形眼镜</a></li>
+        <li><a href="#">招商加盟</a></li>
+	</ul>
+    
+</div>
+<div id="main" style="min-width:300px!important; max-width:730px!important; margin:auto; overflow:hidden;">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div><img class="top" src="images/top1.jpg" /></div>
+			</div>
+			<div class="swiper-slide">
+				<div><img class="top" src="images/top2.jpg" /></div>
+			</div>
+            <div class="swiper-slide">
+				<div><img class="top" src="images/top3.jpg" /></div>
+			</div>
+            <div class="swiper-slide">
+				<div><img class="top" src="images/top4.jpg" /></div>
+			</div>
+		</div>
+		<div class="pagination"></div>
+	</div>
+</div>
+<script>
+
+$(function (){
+	var mySwiper = new Swiper('.swiper-container',{
+	  loop:true,
+	  grabCursor: true,
+	  paginationClickable: true,
+	  pagination: '.pagination'
+	});
+	var resize = function(e) {
+		var query = $('.swiper-container');
+		var clientW = query[0].clientWidth;
+		query.css('height', clientW*320/730+'px');
+	}
+	$(window).bind('resize', resize);
+	resize();
+	setInterval(function(){
+		mySwiper.swipeNext();
+	}, 5000);
+});
+
+</script>
+<div class="que">
+	<div class="title1"><h3>关于眼妈妈</h3></div>
+	<div class="wenti">
+    	<h4>北京眼妈妈科技有限公司<br /></h4>
+    </div>
+    <p>北京眼妈妈科技有限公司成立于2006年，是专业从事功能眼镜研发·生产与销售的高科技公司，是中国眼镜行业拥有自主知识产权最多的企业之一，在眼镜行业中唯一获得“建设创新型国家杰出企业”称号，是中国眼镜协会会员、中国汽车工业协会会员、中国连锁经营协会会员，公司通过ISO9001-2000国际质量管理体系认证，产品通过CE（欧盟）认证。旗下产品有专业驾驶眼镜，专业防辐射眼镜，专业学生眼镜和智能老花镜等八大系列百余款产品，是国内功能眼镜行业的领军企业。</p>
+   
+    <div class="clear"></div>
+</div>
+<div class="adv">
+	<div class="title1"><h3>眼妈妈八大优势</h3></div>
+	<div class="advan"><img src="images/adv1.jpg"/><p>眼妈妈<br />优秀设计师团队！</p></div>
+    <div class="advan"><p>眼妈妈<br />优秀研发团队！</p><img src="images/adv2.jpg"/></div>
+    <div class="advan"><img src="images/adv3.jpg"/><p>眼妈妈<br />严谨加工工艺</p></div>
+    <div class="advan"><p>方程式赛车<br />唯一眼镜赞助商</p><img src="images/adv4.jpg"/></div>
+    <div class="advan"><img src="images/adv5.jpg"/><p>20多家<br />国内知名企业客户</p></div>
+    <div class="advan"><p>功能眼镜<br />行业标准制定者</p><img src="images/adv6.jpg"/></div>
+    <div class="advan"><img src="images/adv7.jpg"/><p>2014年<br />上海股交中心上市</p></div>
+    <div class="advan"><p>齐全的<br />售前售后服务！</p><img src="images/adv8.jpg"/></div>
+</div>
+
+<div class="gg">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成才路千条，眼睛只有一双，<br />
+	不能让孩子的前程输在眼睛上！
+</div>
+<style>
+.yj{
+	width:30%;margin-left:1%;margin-top:1%;float:left;text-align:center;line-height:1.5em;border:3px solid #ff8bb2;background:#fdb8cf;color:#000;
+	}
+.yjjs{
+	width:90%;margin:0 auto;padding:2% 0;
+	}
+.yjjs ul li{
+	width:100%;line-height:1.5em;padding:1%;display:none;
+	}
+</style>
+<script>
+$(document).ready(function(e) {
+    $(".yj").click(function(){
+		var index_=$(this).index();
+		$(".yjjs li").stop(true,true).hide();
+		$(".yjjs li").eq(index_-1).slideDown()
+		})
+});
+</script>
+<div class="ksjs">
+	<div class="title1"><h3>功能眼镜</h3></div>
+	<div class="yj">AB学生镜</div>
+    <div class="yj">驾驶专用眼镜</div>
+    <div class="yj">电脑专用眼镜</div>
+    <div class="yj">智能老花镜</div>
+    <div class="yj">高尔夫眼镜</div>
+    <div class="yj">隐形眼镜</div>
+    <div class="yjjs">
+    	<ul>
+    		<li>AB学生镜：学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势</li>
+            <li>驾驶专用眼镜：学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势</li>
+            <li>电脑专用眼镜：学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势</li>
+            <li>智能老花镜：学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势</li>
+            <li>高尔夫眼镜：学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势</li>
+            <li>隐形眼镜：学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势学生镜的特点优势</li>
+    	</ul>
+    
+    </div>
+    
+    <div class="clear"></div>
+</div>
+
+
+<!--<!--开锁技师
+<div class="sj_js">
+	<div class="title1"><h3>开锁技师</h3></div>
+	<div class="js_nr">
+		<ul>
+        	<li><img src="images/p1.jpg" alt="" /></li>
+        	<li><img src="images/p2.jpg" alt="" /></li>
+        	<li><img src="images/p3.jpg" alt="" /></li>
+        	<li><img src="images/p4.jpg" alt="" /></li>
+        </ul>
+	</div>
+
+</div>
+-->
+<!--商品推荐 -->
+<div class="sj_cp">
+<div class="title1"><h3>产品推荐</h3></div>
+<div class="sj_shop">
+	<ul>
+    	<li><a href="#"><img src="images/shop1.jpg" alt="圣马可-日用眼镜" /></a></li>
+    	<li><a href="#"><img src="images/shop2.jpg" alt="圣马可-夜用驾驶镜" /></a></li>
+    	<li><a href="#"><img src="images/shop3.jpg" alt="圣马可-雨雾镜" /></a></li>
+    	<li><a href="#"><img src="images/shop4.jpg" alt="圣马可-高尔夫运动眼镜" /></a></li>
+    	<li><a href="#"><img src="images/shop5.jpg" alt="圣马可-智能老花镜" /></a></li>
+    	<li><a href="#"><img src="images/shop6.jpg" alt="圣马可-防辐射眼镜" /></a></li>
+        <li><a href="#"><img src="images/shop7.jpg" alt="圣马可-雨雾镜" /></a></li>
+        <li><a href="#"><img src="images/shop8.jpg" alt="圣马可-高尔夫运动眼镜" /></a></li>
+    </ul>
+</div>
+</div>
+<!--资讯-->
+<div class="sj_zx">
+ 	<div class="sj_zx_dt">
+ 		<div class="title1">
+			<h3>眼妈妈动态</h3>
+		</div>
+      <ul>
+    	<li><a href="#">眼妈妈眼镜荣获国内十大知名品牌</a></li>
+        <li><a href="#">必看：2015中高考新题型曝光</a></li>
+        <li><a href="#">轻松赚钱，就在这里！立即赚钱</a></li>
+        <li><a href="#">眼镜广告如何投？010-88888888</a></li>
+     </ul>
+	</div>
+    <div class="sj_zx_wt">
+ 		<div class="title1">
+			<h3>眼妈妈百问</h3>
+		</div>
+       <ul>
+    	<li><a href="#">太阳眼镜如何选择</a></li>
+        <li><a href="#">眼镜广告如何投？</a></li>
+        <li><a href="#">眼镜广告如何投？？</a></li>
+        <li><a href="#">眼镜广告如何投？？</a></li>
+     </ul>
+	</div>
+</div>
+<!--尾部广告-->
+<div class="sj_wb_gg">
+	<div class="title1">
+		<h3>眼妈妈服务客户</h3>
+	</div>
+<img src="images/sj_db_gg.jpg" alt="" />
+</div>
+<!--底部版权-->
+<div class="sj_bq">
+	<p>京网文[2011]0407-139号　互联网新闻信息服务许可</p>
+    <p>国家药监局（京）-经营性-2014-0001　京教研[2002]7号　电信业务审批[2001]字第379号</p>
+    <p>增值电信业务经营许可证B2-20090108　电信与信息服务业务经营许可证000007号　京卫网审[2014]第0148号</p>
+	<p>广播电视节目制作经营许可证（京）字第828号 甲测资字11002019 京公网安备110000000016号</p>
+</div>
+<div class="phnum">
+	全国免费咨询热线:<a href="tel://4008888888">400-8888-888</a>
+</div>
+</body>
+</html>

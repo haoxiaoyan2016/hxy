@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest=""><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Expires" content="-1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <script src="js/zepto.min.js"></script>
+    <script>
+        $(function(){
+            $("#xqTab li").on("click",function(){
+                $(this).addClass("on").siblings(".on").removeClass("on");
+                $(".xq-cont .con").hide();
+                $(".xq-cont .con"+$(this).index()).show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header user-header orig-bg">
+        <div class="left-buttons"><a class="icons01 btn back-btn" href="#"></a></div>
+        <h3>需求详情</h3>
+    </header>
+    <section class="pt44 content">
+        <div class="xq-top-info">
+            <h3>H5动画页面设计</h3>
+            <div class="text">
+                <div class="left">
+                    <div class="price"><span class="on">悬赏</span><span>￥2000</span></div>
+                    <div class="date">剩余时间：<span>11天20小时</span></div>
+                </div>
+                <div class="right">
+                    <div class="status">投标中</div>
+                    <div class="status2">已托管：￥2000</div>
+                </div>
+            </div>
+        </div>
+        <div class="xq-detail-tab">
+            <ul id="xqTab">
+                <li class="on"><a href="#">资料</a></li>
+                <li><a href="#">描述</a></li>
+                <li><a href="#">参与者</a></li>
+                <li><a href="#">留言</a></li>
+            </ul>
+        </div>
+        <div class="xq-cont">
+            <div class="con con0">
+                <div class="material">
+                    <ul>
+                        <li>
+                            <div class="label">悬赏金额</div>
+                            <div class="val red">￥2000</div>
+                        </li>
+                        <li>
+                            <div class="label">已托管</div>
+                            <div class="val">￥0</div>
+                        </li>
+                        <li>
+                            <div class="label">剩余时间</div>
+                            <div class="val orange">10天2小时26分钟</div>
+                        </li>
+                        <li>
+                            <div class="label">发布者</div>
+                            <div class="val link"><a href="#">汪星人</a></div>
+                        </li>
+                        <li class="current-status">
+                            <div class="label">当前状态</div>
+                            <div class="val">
+                                <div class="item on">发布</div>
+                                <div class="item on">投稿</div>
+                                <div class="item">选稿</div>
+                                <div class="item">公示</div>
+                                <div class="item">结束</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="ycj"><a class="btn" href="#">已承接</a></div>
+                </div>
+            </div>
+            <div class="con con1" style="display: none;">
+                <div class="description">
+                    <div class="text">
+                        <p class="em2">
+                            描述内容描述内容描述内容描述内容描述内容描述内容描述内容
+                            描述内容描述内容描述内容描述内容描述内容描述内容描述内容
+                            描述内容描述内容描述内容描述内容描述内容描述内容描述内容
+                            描述内容描述内容描述内容描述内容描述内容描述内容描述内容
+                        </p>
+                        <p class="photo">
+                            <img src="images/pic02.jpg"/>
+                        </p>
+                    </div>
+                    <div class="ycj"><a class="btn" href="#">已承接</a></div>
+                </div>
+            </div>
+            <div class="con con2" style="display: none;">
+                <ul class="comments-list">
+                    <li>
+                        <div class="item">
+                            <div class="photo"><img src="images/photo02.jpg"/></div>
+                            <div class="text">
+                                <h4>花花火火苗苗</h4>
+                                <div class="date">2015-06-15</div>
+                                <div class="buttons"><a href="#">举报</a></div>
+                                <div class="zb"></div>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <div class="photo2"><img src="images/photo02.jpg"/></div>
+                            <div class="text2">
+                                <h4>交稿：页面A版</h4>
+                                <div class="number"><span>24KB</span><span>2015.08.06</span></div>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <div class="photo2"><img src="images/photo02.jpg"/></div>
+                            <div class="text2">
+                                <h4>交稿：页面A版</h4>
+                                <div class="number"><span>24KB</span><span>2015.08.06</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="photo"><img src="images/photo02.jpg"/></div>
+                            <div class="text">
+                                <h4>新时代小明</h4>
+                                <div class="date">2015-06-15</div>
+                                <div class="buttons"><a href="#">举报</a></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="ycj"><a class="btn" href="#">已承接</a></div>
+            </div>
+            <div class="con con3" style="display: none;">
+                <ul class="comments-list">
+                    <li>
+                        <div class="item">
+                            <div class="photo"><img src="images/photo02.jpg"/></div>
+                            <div class="text">
+                                <h4>花花火火苗苗</h4>
+                                <div class="date">2015-06-15</div>
+                                <div class="c">我可以完成哦。欢迎联系！</div>
+                                <div class="buttons"><a href="#">举报</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="photo"><img src="images/photo02.jpg"/></div>
+                            <div class="text">
+                                <h4>新时代小明</h4>
+                                <div class="date">2015-06-15</div>
+                                <div class="c">您好，我是声动文化传媒有限公司的客服，我们公司专业配音配乐如果您有需要可以Q我哈~ 95777600欢迎试音。</div>
+                                <div class="buttons"><a href="#">回复</a><a href="#">举报</a></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="ycj"><a class="btn" href="#">已承接</a></div>
+                <footer class="footer-reply"><input type="text" placeholder="评论"/></footer>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
