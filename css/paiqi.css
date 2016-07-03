@@ -36,7 +36,7 @@ span {
     text-align: left;
 
 }
-/*开关*/
+/*锟斤拷锟斤拷*/
 .switch{
     margin: 50px;
     display: inline-block;
@@ -46,7 +46,7 @@ span {
     cursor: pointer;
 }
 
-/*头部样式*/
+/*头锟斤拷锟斤拷式*/
 .fist_row{
     margin-top: 20px;
 }
@@ -78,8 +78,11 @@ span {
 }
 
 .triangle {
-    display: inline-block;
+    float: right;
+    height: 30px;
+    line-height: 35px;
     width: 20px;
+    text-align: right;
     background: #CCCCCC;
     border: 1px solid #000;
     border-left: transparent;
@@ -127,7 +130,7 @@ ul li {
     margin-left: 20px;
 }
 
-/*底部样式*/
+/*锟阶诧拷锟斤拷式*/
 .footer span:nth-child(1) {
     display: inline-block;
     color: #cc0000;
@@ -145,19 +148,19 @@ ul li {
     text-align: center;
 }
 
-/*中间身体表格样式*/
+/*锟叫硷拷锟斤拷锟斤拷锟斤拷锟斤拷式*/
 .first_column {
     width: 50px;
 }
-/*不可选日期*/
+/*锟斤拷锟斤拷选锟斤拷锟斤拷*/
 .disabled{
     background:#dedede;
 }
-/*已占用日期*/
+/*锟斤拷占锟斤拷锟斤拷锟斤拷*/
 .already{
     background: #c3c3c3
 }
-/*我占用日期*/
+/*锟斤拷占锟斤拷锟斤拷锟斤拷*/
 .my_disabled{
     background:#555555;
 }
